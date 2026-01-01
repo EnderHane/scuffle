@@ -375,9 +375,9 @@ impl VideoFrame {
     }
 
     /// Returns true if the frame is a keyframe.
-    pub const fn is_keyframe(&self) -> bool {
-        self.0.0.as_deref_except().key_frame != 0
-    }
+    // pub const fn is_keyframe(&self) -> bool {
+    //     self.0.0.as_deref_except().key_frame != 0
+    // }
 
     /// Returns the picture type of the frame.
     pub const fn pict_type(&self) -> AVPictureType {
@@ -465,7 +465,7 @@ impl std::fmt::Debug for VideoFrame {
             .field("format", &self.format())
             .field("is_audio", &self.is_audio())
             .field("is_video", &self.is_video())
-            .field("is_keyframe", &self.is_keyframe())
+            // .field("is_keyframe", &self.is_keyframe())
             .finish()
     }
 }
