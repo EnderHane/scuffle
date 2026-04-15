@@ -22,7 +22,7 @@ crossbeam-channel = { optional = true, version = "0.5" }
 document-features = { optional = true, version = "0.2" }
 libc = "0.2"
 nutype-enum = { path = "../nutype-enum", version = "0.1" }
-rusty_ffmpeg = "0.16.4"
+rusty_ffmpeg = "0.17.0+ffmpeg.8.1"
 scuffle-changelog = { optional = true, path = "../changelog", version = "0.1" }
 thiserror = "2.0"
 tokio = { features = ["sync"], optional = true, version = "1" }

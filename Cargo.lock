@@ -308,7 +308,7 @@ version = "0.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e44d16778acaf6a9ec9899b92cebd65580b83f685446bf2e1f5d3d732f99dcd"
 dependencies = [
- "bindgen 0.72.1",
+ "bindgen",
  "cc",
  "cmake",
  "dunce",
@@ -456,26 +456,6 @@ name = "beef"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3a8241f3ebb85c056b509d4327ad0358fbbba6ffb340bf388f26350aeda225b1"
-
-[[package]]
-name = "bindgen"
-version = "0.71.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5f58bf3d7db68cfbac37cfc485a8d711e87e064c3d0fe0435b92f7a407f9d6b3"
-dependencies = [
- "bitflags 2.9.4",
- "cexpr",
- "clang-sys",
- "itertools 0.13.0",
- "log",
- "prettyplease",
- "proc-macro2",
- "quote",
- "regex",
- "rustc-hash",
- "shlex",
- "syn 2.0.106",
-]
 
 [[package]]
 name = "bindgen"
@@ -5371,11 +5351,11 @@ checksum = "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
 
 [[package]]
 name = "rusty_ffmpeg"
-version = "0.16.7+ffmpeg.8"
+version = "0.17.0+ffmpeg.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f25d40a46450059278c9f9f2616018910b647877a66a2093a83f115f59763967"
+checksum = "f2af9fcc780549d620ddedd4d9f26d62c523f221c0db882ea75e8a5ffe2fff9a"
 dependencies = [
- "bindgen 0.71.1",
+ "bindgen",
  "camino",
  "once_cell",
  "pkg-config",
